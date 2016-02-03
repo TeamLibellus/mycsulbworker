@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+  - stable
+before_deploy: zip -r deploy.zip . -x *.git*
+deploy:
+  - provider: lambda
+    access_key_id: ${AWS_ACCESS_KEY}
+    secret_access_key: ${AWS_SECRET_KEY}
+    role: ${AWS_LAMBDA_ROLE}
+    function_name: MyCSULBWorker
+    timeout: 60
+    handler_name: main
+    zip: ./deploy.zip

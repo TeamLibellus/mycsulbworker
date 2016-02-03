@@ -1,0 +1,19 @@
+{
+  "name": "mycsulbworker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TeamLibellus/mycsulbworker.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TeamLibellus/mycsulbworker/issues"
+  },
+  "homepage": "https://github.com/TeamLibellus/mycsulbworker#readme"
+}
